@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics Grouped</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/calc.css">
+  </head>
+
+  <body style="background-image: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+    <script src="js/index.js"></script>
+
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg border-bottom border-bottom-dark bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto calc-bold" href="#">Statistics Calculator</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5 mb-5" >
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center column-gap-3">
+            <a
+          href="#"
+          class="w-25"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-light btn-sm mt-3 fs-5 w-100 active rounded-4"
+          >
+            Grouped
+          </button>
+        </a>
+        <a
+          href="ungrouped.html"
+          class="w-25"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-light btn-sm mt-3 fs-5 w-100 rounded-4"
+          >
+            Ungrouped
+          </button>
+        </a>
+          </div>
+          
+        </div>
+       
+      </div>
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-xl-6 mt-5">
+            <p class="calc-bold">Input number of rows</p>
+
+            <input type="number" placeholder="Rows" id="rowNumber" class="form-control mb-3" />
+
+            <button
+              type="button"
+              class="btn btn-outline-light btn-sm mx-auto rounded-4"
+              onclick="generateTable()"
+            >
+              Create Table
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-sm mx-auto rounded-4"
+              onclick="resetTable()"
+            >
+              Reset
+            </button>
+
+            <table id="inputTable" class="table table-bordered border-light-subtle table-hover mt-3">
+              <tr class="table-light calc-bold">
+                <td>Class Interval</td>
+                <td>f</td>
+              </tr>
+            </table>
+
+            <button
+              type="button"
+              class="btn btn-outline-light btn-sm mx-auto rounded-4"
+              onclick="solve()"
+            >
+              Solve!
+            </button>
+          </div>
+          <div class="col-xl-6 mt-5" id="outputSide">
+            <p class="calc-bold">Result</p>
+            <table id="outputTable" class="table table-bordered border-light-subtle table-hover">
+              <tr class="table-light calc-bold">
+                <td>Class Interval</td>
+                <td>f</td>
+                <td>x</td>
+                <td>cf</td>
+                <td>fx</td>
+                <td>fx^2</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
