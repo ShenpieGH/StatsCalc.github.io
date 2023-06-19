@@ -1,0 +1,21 @@
+@font-face{
+    font-family: alido-reg;
+    src: url('../fonts/FOT-Alido.otf');
+}
+
+@font-face{
+    font-family: alido-bold;
+    src: url('../fonts/FOT-AlidoBold.otf');
+}
+
+body{
+    font-family: alido-reg;
+}
+
+.calc-bold{
+    font-family: alido-bold;
+}
+
+.calc-reg{
+    font-family: alido-reg;
+}
